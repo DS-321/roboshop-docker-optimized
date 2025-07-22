@@ -31,7 +31,7 @@ services:
     image: sharmila321/mysql:v1
     container_name: mysql
   shipping:
-    image: shipping:v1
+    image: sharmila321/shipping:v1
     container_name: shipping
     depends_on:
     - mysql
