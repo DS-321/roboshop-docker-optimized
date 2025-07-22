@@ -40,7 +40,9 @@ services:
     image: rabbitmq:3
     container_name: rabbitmq
     ports:
-      - "8080:8080"
+      - "5672:5672"   # Required for AMQP
+      - "15672:15672" # Optional: Management UI (for browser access)
+      # - "8080:8080"
     environment:
       RABBITMQ_DEFAULT_USER: roboshop
       RABBITMQ_DEFAULT_PASS: roboshop123
