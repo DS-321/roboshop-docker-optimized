@@ -59,15 +59,15 @@ services:
     - rabbitmq
     - cart
     - user
-  frontend:
-    image: sharmila321/frontend:v1
-    container_name: frontend
-    ports:
-    - "80:80"
-    depends_on:
-    - catalogue
-    - user
-    - cart
-    - shipping
-    - payment
-    restart: on-failure
+  # frontend:
+  #   image: sharmila321/frontend:v1
+  #   container_name: frontend
+  #   ports:
+  #   - "80:80"
+  #   depends_on:
+  #   - catalogue
+  #   - user
+  #   - cart
+  #   - shipping
+  #   - payment
+  #   restart: on-failure
